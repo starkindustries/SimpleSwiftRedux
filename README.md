@@ -6,3 +6,7 @@ https://medium.com/newindustrialist/redux-in-swift-pt-1-what-why-and-how-b52e6fd
 
 ### Getting Started with ReSwift
 http://reswift.github.io/ReSwift/master/getting-started-guide.html
+
+### SwiftLint
+This project also implements SwiftLint.
+https://github.com/realm/SwiftLint
