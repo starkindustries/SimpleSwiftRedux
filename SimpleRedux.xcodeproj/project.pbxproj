@@ -15,6 +15,7 @@
 		2323A26421B395370030F0B5 /* SimpleReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2323A26321B395370030F0B5 /* SimpleReduxTests.swift */; };
 		2323A26F21B395370030F0B5 /* SimpleReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2323A26E21B395370030F0B5 /* SimpleReduxUITests.swift */; };
 		2323A27D21B395D80030F0B5 /* SimpleRedux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2323A27C21B395D80030F0B5 /* SimpleRedux.swift */; };
+		2323A27F21B3DEC30030F0B5 /* SimpleReduxExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2323A27E21B3DEC30030F0B5 /* SimpleReduxExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2323A26E21B395370030F0B5 /* SimpleReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleReduxUITests.swift; sourceTree = "<group>"; };
 		2323A27021B395370030F0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2323A27C21B395D80030F0B5 /* SimpleRedux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRedux.swift; sourceTree = "<group>"; };
+		2323A27E21B3DEC30030F0B5 /* SimpleReduxExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleReduxExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				2323A24E21B395340030F0B5 /* AppDelegate.swift */,
 				2323A25021B395340030F0B5 /* MainViewController.swift */,
+				2323A27E21B3DEC30030F0B5 /* SimpleReduxExample.swift */,
 				2323A25221B395340030F0B5 /* Main.storyboard */,
 				2323A25521B395370030F0B5 /* Assets.xcassets */,
 				2323A25721B395370030F0B5 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2323A25121B395340030F0B5 /* MainViewController.swift in Sources */,
+				2323A27F21B3DEC30030F0B5 /* SimpleReduxExample.swift in Sources */,
 				2323A24F21B395340030F0B5 /* AppDelegate.swift in Sources */,
 				2323A27D21B395D80030F0B5 /* SimpleRedux.swift in Sources */,
 			);
