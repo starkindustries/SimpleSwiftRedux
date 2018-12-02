@@ -7,6 +7,18 @@
 //
 
 import UIKit
+import ReSwift
+
+// ********************
+// Store
+// ********************
+//
+// https://github.com/ReSwift/ReSwift#getting-started-guide
+// To maintain our state and delegate the actions to the reducers,
+// we need a store. Let's call it mainStore and define it as a global
+// constant, for example in the app delegate file:
+// Note: middlewares are optional
+let store = Store(reducer: appReducer, state: AppState(), middleware: [])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReSwift
 
 class MainViewController: UIViewController, StoreSubscriber {
 
@@ -14,12 +15,13 @@ class MainViewController: UIViewController, StoreSubscriber {
     
     @IBAction func didPressPlusButton(_ sender: UIButton) {
         print("PLUS")
-        store.dispatch(action: IncreaseAction(increaseBy: 1))
+        store.dispatch(IncreaseAction(increaseBy: 1))
     }
     
     @IBAction func didPressMinusButton(_ sender: UIButton) {
         print("MINUS")
-        store.dispatch(action: DecreaseAction(decreaseBy: 1))
+        store.dispatch(DecreaseAction(decreaseBy: 1))
+        
     }
     
     override func viewDidLoad() {
@@ -28,9 +30,14 @@ class MainViewController: UIViewController, StoreSubscriber {
         store.subscribe(self)
     }
     
-    func newState(state: State) {
-        guard let appState = state as? AppState else { return }
-        counterLabel.text = appState.counter.description
+    
+    // ********************
+    // StoreSubscriber
+    // ********************
+    typealias StoreSubscriberStateType = AppState
+    
+    func newState(state: StoreSubscriberStateType) {
+        counterLabel.text = state.counter.description
     }
 }
 

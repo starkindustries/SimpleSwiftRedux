@@ -5,7 +5,7 @@
 //  Created by Zion Perez on 12/2/18.
 //  Copyright © 2018 Zion Perez. All rights reserved.
 //
-
+/*
 import Foundation
 
 let store = Store(reducer: appReducer, state: nil)
@@ -36,3 +36,4 @@ func appReducer(_ action: Action, _ state: State?) -> State {
     
     return newState
 }
+*/
