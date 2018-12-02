@@ -30,7 +30,6 @@ class MainViewController: UIViewController, StoreSubscriber {
         store.subscribe(self)
     }
     
-    
     // ********************
     // StoreSubscriber
     // ********************
@@ -40,4 +39,3 @@ class MainViewController: UIViewController, StoreSubscriber {
         counterLabel.text = state.counter.description
     }
 }
-

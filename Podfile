@@ -8,6 +8,7 @@ target 'SimpleRedux' do
 
   # Pods for SimpleRedux
   pod 'ReSwift'
+  pod 'SwiftLint'
 
   target 'SimpleReduxTests' do
     inherit! :search_paths
