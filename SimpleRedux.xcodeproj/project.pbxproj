@@ -104,11 +104,11 @@
 				2323A24E21B395340030F0B5 /* AppDelegate.swift */,
 				2323A25021B395340030F0B5 /* MainViewController.swift */,
 				2323A27E21B3DEC30030F0B5 /* SimpleReduxExample.swift */,
+				2323A27C21B395D80030F0B5 /* SimpleRedux.swift */,
 				2323A25221B395340030F0B5 /* Main.storyboard */,
 				2323A25521B395370030F0B5 /* Assets.xcassets */,
 				2323A25721B395370030F0B5 /* LaunchScreen.storyboard */,
 				2323A25A21B395370030F0B5 /* Info.plist */,
-				2323A27C21B395D80030F0B5 /* SimpleRedux.swift */,
 			);
 			path = SimpleRedux;
 			sourceTree = "<group>";

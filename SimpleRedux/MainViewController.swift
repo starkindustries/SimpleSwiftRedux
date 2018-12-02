@@ -8,25 +8,29 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, StoreSubscriber {
 
     @IBOutlet weak var counterLabel: UILabel!
     
     @IBAction func didPressPlusButton(_ sender: UIButton) {
         print("PLUS")
-        counterLabel.text = "PLUS"
+        store.dispatch(action: IncreaseAction(increaseBy: 1))
     }
     
     @IBAction func didPressMinusButton(_ sender: UIButton) {
         print("MINUS")
-        counterLabel.text = "MINUS"
+        store.dispatch(action: DecreaseAction(decreaseBy: 1))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        store.subscribe(self)
     }
-
-
+    
+    func newState(state: State) {
+        guard let appState = state as? AppState else { return }
+        counterLabel.text = appState.counter.description
+    }
 }
 
